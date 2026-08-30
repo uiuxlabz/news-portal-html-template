@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World News — NEWSROOM</title>
+  <meta name="description" content="Browse the latest world news, international affairs, and global analysis from NEWSROOM's award-winning journalists.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <span class="header__date"></span>
+        <div class="header__top-right">
+          <a href="contact.html" class="text-blue fw-bold" style="font-size:var(--fs-xs)">Contact</a>
+          <span>|</span>
+          <a href="#" class="text-blue fw-bold" style="font-size:var(--fs-xs)">Subscribe</a>
+        </div>
+      </div>
+      <div class="header__main">
+        <a href="index.html" class="header__logo">
+          <img src="assets/img/logo.png" alt="NEWSROOM logo" class="header__logo-img">
+          <div>
+            <span class="header__logo-text">NEWSROOM</span>
+            <span class="header__logo-tagline">Truth in Every Headline</span>
+          </div>
+        </a>
+        <div class="header__search">
+          <span class="header__search-icon">&#128269;</span>
+          <input type="search" placeholder="Search articles..." aria-label="Search articles">
+        </div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container">
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="category.html" class="nav__link">Politics</a></li>
+          <li><a href="category.html" class="nav__link">Technology</a></li>
+          <li><a href="category.html" class="nav__link active" aria-current="page">World</a></li>
+          <li><a href="category.html" class="nav__link">Business</a></li>
+          <li><a href="category.html" class="nav__link">Culture</a></li>
+          <li><a href="category.html" class="nav__link">Opinion</a></li>
+          <span class="nav__spacer"></span>
+          <li><a href="contact.html" class="nav__cta">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══ CATEGORY HERO ═══ -->
+  <section class="cat-hero">
+    <div class="container">
+      <h1 class="cat-hero__title">World News</h1>
+      <p class="cat-hero__count">12 articles</p>
+    </div>
+  </section>
+
+  <!-- ═══ FILTERS ═══ -->
+  <div class="cat-filters">
+    <div class="container">
+      <div class="cat-filters__list">
+        <button class="cat-filters__btn active" data-filter="all">All</button>
+        <button class="cat-filters__btn" data-filter="politics">Politics</button>
+        <button class="cat-filters__btn" data-filter="technology">Technology</button>
+        <button class="cat-filters__btn" data-filter="world">World</button>
+        <button class="cat-filters__btn" data-filter="business">Business</button>
+        <button class="cat-filters__btn" data-filter="culture">Culture</button>
+        <button class="cat-filters__btn" data-filter="science">Science</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ARTICLE GRID ═══ -->
+  <section class="cat-grid">
+    <div class="container">
+      <div class="cat-grid__wrap">
+
+        <!-- Row 1 -->
+        <div data-category="world" class="card reveal">
+          <img src="assets/img/top-news-1.jpg" alt="Climate summit" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">World</span>
+            <h3 class="card__title">World Leaders Unite Behind Ambitious Climate Framework at Geneva Summit</h3>
+            <p class="card__excerpt">In a historic accord, representatives from 194 nations have agreed to binding emission reduction targets.</p>
+            <div class="card__meta">
+              <span>Elena Vasquez</span>
+              <span class="card__meta-sep"></span>
+              <span>12 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="technology" class="card reveal">
+          <img src="assets/img/cat-news-3.jpg" alt="AI healthcare" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Technology</span>
+            <h3 class="card__title">Artificial Intelligence Transforms Healthcare Diagnostics With Unprecedented Accuracy</h3>
+            <p class="card__excerpt">New AI systems are achieving diagnostic accuracy rates surpassing human specialists.</p>
+            <div class="card__meta">
+              <span>Sarah Mitchell</span>
+              <span class="card__meta-sep"></span>
+              <span>10 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="business" class="card reveal">
+          <img src="assets/img/cat-news-2.jpg" alt="Financial markets" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Business</span>
+            <h3 class="card__title">Global Supply Chains Adapt as New Trade Routes Emerge in Southeast Asia</h3>
+            <p class="card__excerpt">Economic analysts predict a fundamental shift in global logistics patterns.</p>
+            <div class="card__meta">
+              <span>Marcus Chen</span>
+              <span class="card__meta-sep"></span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div data-category="politics" class="card reveal">
+          <img src="assets/img/cat-news-5.jpg" alt="Education reform" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Politics</span>
+            <h3 class="card__title">Education Reform Bill Sparks National Debate Over Future of Public Schools</h3>
+            <p class="card__excerpt">The proposed legislation would fundamentally alter funding models and curriculum standards.</p>
+            <div class="card__meta">
+              <span>Linda Park</span>
+              <span class="card__meta-sep"></span>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="science" class="card reveal">
+          <img src="assets/img/cat-news-6.jpg" alt="Solar energy" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Science</span>
+            <h3 class="card__title">Breakthrough in Solar Cell Efficiency Promises Cheaper Clean Energy Worldwide</h3>
+            <p class="card__excerpt">Researchers have achieved a record 47% efficiency in perovskite-silicon tandem cells.</p>
+            <div class="card__meta">
+              <span>Dr. Aisha Patel</span>
+              <span class="card__meta-sep"></span>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="culture" class="card reveal">
+          <img src="assets/img/cat-news-9.jpg" alt="Cultural heritage" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Culture</span>
+            <h3 class="card__title">Preserving Cultural Heritage in a Digital World: Museums Embrace Virtual Reality</h3>
+            <p class="card__excerpt">Leading institutions are using immersive technology to democratize access to cultural artifacts.</p>
+            <div class="card__meta">
+              <span>Maria Santos</span>
+              <span class="card__meta-sep"></span>
+              <span>6 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div data-category="world" class="card reveal">
+          <img src="assets/img/cat-news-4.jpg" alt="Smart cities" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">World</span>
+            <h3 class="card__title">How Smart Cities Are Redefining Urban Living Across Three Continents</h3>
+            <p class="card__excerpt">From Copenhagen to Singapore, pioneering cities demonstrate sustainable urban environments.</p>
+            <div class="card__meta">
+              <span>James Wright</span>
+              <span class="card__meta-sep"></span>
+              <span>15 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="technology" class="card reveal">
+          <img src="assets/img/cat-news-8.jpg" alt="Digital privacy" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Technology</span>
+            <h3 class="card__title">Privacy in the Age of AI: Balancing Innovation With Individual Rights</h3>
+            <p class="card__excerpt">As artificial intelligence becomes ubiquitous, the tension between progress and privacy grows.</p>
+            <div class="card__meta">
+              <span>Nina Torres</span>
+              <span class="card__meta-sep"></span>
+              <span>13 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="business" class="card reveal">
+          <img src="assets/img/top-news-3.jpg" alt="Central banks" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Business</span>
+            <h3 class="card__title">Central Banks Signal Shift in Monetary Policy Amid Inflation Concerns</h3>
+            <p class="card__excerpt">Major central banks are navigating a complex economic landscape with divergent policy approaches.</p>
+            <div class="card__meta">
+              <span>Robert Kim</span>
+              <span class="card__meta-sep"></span>
+              <span>11 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div data-category="politics" class="card reveal">
+          <img src="assets/img/top-news-4.jpg" alt="Senate infrastructure" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Politics</span>
+            <h3 class="card__title">Senate Passes Landmark Infrastructure Bill After Months of Debate</h3>
+            <p class="card__excerpt">The $1.2 trillion package includes funding for roads, bridges, broadband, and clean energy.</p>
+            <div class="card__meta">
+              <span>David Moore</span>
+              <span class="card__meta-sep"></span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="science" class="card reveal">
+          <img src="assets/img/cat-news-1.jpg" alt="Space exploration" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Science</span>
+            <h3 class="card__title">NASA's Artemis Program Reaches New Milestone With Lunar Orbit Insertion</h3>
+            <p class="card__excerpt">The spacecraft successfully entered lunar orbit, bringing humanity closer to the Moon.</p>
+            <div class="card__meta">
+              <span>Elena Vasquez</span>
+              <span class="card__meta-sep"></span>
+              <span>12 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="culture" class="card reveal">
+          <img src="assets/img/top-news-5.jpg" alt="Film festival" class="card__img">
+          <div class="card__body">
+            <span class="card__cat">Culture</span>
+            <h3 class="card__title">International Film Festival Announces Revolutionary Digital Category</h3>
+            <p class="card__excerpt">The prestigious festival embraces interactive and VR storytelling for the first time.</p>
+            <div class="card__meta">
+              <span>Maria Santos</span>
+              <span class="card__meta-sep"></span>
+              <span>5 min read</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NEWSLETTER ═══ -->
+  <section class="newsletter reveal">
+    <div class="container">
+      <div class="newsletter__inner">
+        <div class="newsletter__icon">&#9993;</div>
+        <h2 class="newsletter__title">Stay Informed</h2>
+        <p class="newsletter__text">Get the day's most important stories delivered to your inbox every morning. No spam, just journalism that matters.</p>
+        <form class="newsletter__form" data-form>
+          <input type="email" class="newsletter__input" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <div class="form-ok" style="margin-top:1rem">Welcome to NEWSROOM. Check your inbox for confirmation.</div>
+        <div class="form-err" style="margin-top:1rem">Please enter a valid email address.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand-title">NEWSROOM</h3>
+          <p class="footer__brand-text">Delivering accurate, unbiased journalism to readers worldwide. Our commitment to truth and accountability drives every story we publish.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Sections</h4>
+          <a href="category.html" class="footer__link">Politics</a>
+          <a href="category.html" class="footer__link">Technology</a>
+          <a href="category.html" class="footer__link">World</a>
+          <a href="category.html" class="footer__link">Business</a>
+          <a href="category.html" class="footer__link">Culture</a>
+          <a href="category.html" class="footer__link">Science</a>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Ethics Policy</a>
+          <a href="#" class="footer__link">Corrections</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Legal</h4>
+          <a href="#" class="footer__link">Terms of Service</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Cookie Policy</a>
+          <a href="#" class="footer__link">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> NEWSROOM. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
