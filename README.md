@@ -6,6 +6,10 @@ A premium, responsive news portal template built with HTML, CSS, and vanilla Jav
 
 ---
 
+## 📸 Screenshot
+
+![Homepage Preview](screenshot.png)
+
 ## Live Pages
 
 | Page | Description | File |
